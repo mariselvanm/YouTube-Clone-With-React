@@ -22,7 +22,7 @@ const YouTubeHeader = () => (
     <div className="middle-container">
         <div className="search-container">
           <input type="text" placeholder="Search" className="search-box"/>
-          <button class="search-button">
+          <button className="search-button">
             <SearchIcon />
           </button>
         </div>
