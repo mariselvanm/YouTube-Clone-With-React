@@ -1,0 +1,52 @@
+.suggestion-container {
+    position: fixed;
+    top: 56px;
+
+    .scroll-container {
+        width: 100%;
+        height: 56px;
+        position: relative;
+        border-top: 1px solid #ffffff1a;
+        border-bottom: 1px solid #ffffff1a;
+        background: #212121;
+    }
+
+    .topic-container {
+        display: inline-block;
+        margin: 12px 6px;
+        color: #fff;
+        background: #3d3d3c;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        padding: 5px 10px;
+        border-bottom-left-radius: 16px;
+        border-bottom-right-radius: 16px;
+        border-top-left-radius: 16px;
+        border-top-right-radius: 16px;
+
+        &.active {
+            background: rgb(255, 255, 255);
+        }
+
+    }
+
+    .left-arrow, .right-arrow {
+            position: absolute;
+            top: 1px;
+            height: inherit;
+            width: 59px;
+            text-align: center;
+            line-height: 56px;
+            color: #fff;
+            z-index: 2000;
+            background: #212121f0;
+            cursor: pointer;
+    }
+
+    .left-arrow {
+        left: 0;
+    }
+
+    .right-arrow {
+        right: 0;
+    }
+}
