@@ -2,7 +2,7 @@
 
     .youtube-side-bar-container-parent {
         display: flex;
-        width: 13%;
+        width: 19%;
         height: 100%;
         flex-direction: column;
 
@@ -16,6 +16,7 @@
         flex-direction: row;
         width: 100%;
         height: 100vh;
+        overflow: hidden;
 
         .youtube-side-bar-container {
             overflow: scroll;
@@ -63,6 +64,21 @@
                 color: #717171;
                 margin: 14px 17px 14px 17px;
             }
+        }
+    }
+
+    .youtube-content-box-container {
+        width: 100%;
+        overflow-x: hidden;
+        overflow-y: scroll;
+
+        .suggestion-list-container {
+            width: 98%;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            margin-top: 146px;
+            margin-left: 26px;
         }
     }
 }

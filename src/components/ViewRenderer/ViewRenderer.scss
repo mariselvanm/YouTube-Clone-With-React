@@ -1,0 +1,50 @@
+.preview-view-container {
+    width: 250px;
+    height: 215px;
+    display: flex;
+    flex-direction: column;
+    background: transparent;
+    margin: 0 15px 55px 0;
+
+    .preview-image-container {
+        img {
+            width: 245px;
+        }
+    }
+
+    .preview-detail-container {
+        margin-top: 10px;
+        width: 100%;
+        display: flex;
+
+        .channel-icon {
+            img {
+                width: 36px;
+                border-radius: 100%;
+            }
+        }
+
+        .channel-detail {
+            margin-left: 14px;
+            display: flex;
+            flex-direction: column;
+            font-size: 14px;
+
+            .video-title {
+                color: #fff;
+            }
+
+            .channel-title {
+                margin-top: 6px;
+            }   
+
+            .channel-title, .view-detail {
+                color: #aaaaaa;
+            }
+        }
+
+        .menu-icon-container {
+
+        }
+    }
+}

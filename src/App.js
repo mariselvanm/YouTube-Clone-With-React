@@ -1,6 +1,7 @@
 import YouTubeHeader from './components/YouTubeHeader/YouTubeHeader';
 import YouTubeSideMenu from './components/YouTubeSideMenu/YouTubeSideMenu';
 import TopicSuggestion from './components/TopicSuggestion/TopicSuggestion';
+import ViewRenderer from './components/ViewRenderer/ViewRenderer';
 import { HOME_SECTION, PERSONAL_SECTION, MORE_FROM_YOUTUBE, OTHERS, GUIDE_LINKS_1, GUIDE_LINKS_2 } from './constants/SideMenuConstant';
 import { TOPICS } from './constants/TopicsConstant';
 import './App.scss';
@@ -30,6 +31,9 @@ function App() {
         </div>  
         <div className="youtube-content-box-container">
             <TopicSuggestion topics={TOPICS}/>
+            <div className="suggestion-list-container">
+              <ViewRenderer />
+            </div>
         </div>
       </div>
     </div>
