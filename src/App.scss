@@ -73,12 +73,12 @@
         overflow-y: scroll;
 
         .suggestion-list-container {
-            width: 98%;
+            width: inherit;
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
             margin-top: 146px;
-            margin-left: 26px;
+            justify-content: space-around;
         }
     }
 }

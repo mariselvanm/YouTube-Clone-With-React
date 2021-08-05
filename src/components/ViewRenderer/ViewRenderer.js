@@ -3,13 +3,22 @@ import MoreVertIcon from '@material-ui/icons/MoreVert';
 
 function ViewRenderer() {
 
+    function loadPreviewVideo(e) {
+        e.target.src = "https://i.ytimg.com/an_webp/mI2rTlnFvsI/mqdefault_6s.webp?du=3000&sqp=CJzjr4gG&rs=AOn4CLAcxsiPMRWZIwGDkGK678w4SZVUgQ";
+    }
+
+    function loadPreviewImage(e) {
+        e.target.src = "https://i.ytimg.com/vi/jdNrrrjJeos/hq720.jpg?sqp=-…AFwAcABBg==&rs=AOn4CLA1ttFJ2orCE1QRU87Po2Niw8dyFg";
+    }
+
     const repeater = () => {
         let arr = [];
         for(let i = 0 ;i<100;i++) {
             arr.push(
-                <div className="preview-view-container">
-                    <div className="preview-image-container">
-                        <img alt="preview" src="https://i.ytimg.com/vi/jdNrrrjJeos/hq720.jpg?sqp=-…AFwAcABBg==&rs=AOn4CLA1ttFJ2orCE1QRU87Po2Niw8dyFg" />
+                <div className="preview-view-container" key={i}>
+                    <div className="preview-image-container" onMouseEnter={(event) => loadPreviewVideo(event)} onMouseLeave={(event) => loadPreviewImage(event)}>
+                        <img className="preview-image" alt="preview" src="https://i.ytimg.com/vi/jdNrrrjJeos/hq720.jpg?sqp=-…AFwAcABBg==&rs=AOn4CLA1ttFJ2orCE1QRU87Po2Niw8dyFg"/>
+                        <div className="time-specifier">0:44</div>
                     </div>
                     <div className="preview-detail-container">
                         <div className="channel-icon">

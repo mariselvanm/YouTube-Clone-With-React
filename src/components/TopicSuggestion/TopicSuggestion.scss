@@ -1,6 +1,7 @@
 .suggestion-container {
     position: fixed;
     top: 56px;
+    z-index: 2000;
 
     .scroll-container {
         width: 100%;

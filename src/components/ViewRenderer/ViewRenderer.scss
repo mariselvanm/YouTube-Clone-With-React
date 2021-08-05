@@ -7,8 +7,21 @@
     margin: 0 15px 55px 0;
 
     .preview-image-container {
+        position: relative;
+
         img {
             width: 245px;
+        }
+
+        .time-specifier {
+            position: absolute;
+            font-size: 12px;
+            color: #fff;
+            background: #000;
+            text-align: center;
+            padding: 3px 3px;
+            top: 81%;
+            right: 3%;
         }
     }
 
